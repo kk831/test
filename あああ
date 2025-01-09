@@ -880,421 +880,429 @@ When reviewing a pull request on GitHub, what is the purpose of the "Files chang
 
 問題1:
 Gabe has recently changed the visibility of his code repository from public to private. What is the impact of doing so?
-〇
-〇
-〇
-〇
+〇public forks of the repository are made private
+〇<p>GitHub will no longer include the repository in the GitHub Archive Program</p>
+〇published GitHub Pages will no longer remain publicly accessible
+〇<p>the repository will gain access to GitHub Advanced Security features.</p>
 
 問題2:
 David wants to analyze statistics, traffic, and other data for his GitHub repository. What is the correct way for him to access this repository data?
-〇
-〇
-〇
-〇
+〇<p>use the repository insights to view its traffic, full clones, visitors, referring sites, and popular content in the traffic graph</p>
+〇<p>use the <code>git log</code> command in the local repository to view the information about the repository</p>
+〇<p>navigate to the repository settings and click on Analytics. Download the data and use a reporting tool to view the data and create the desired graphs</p>
+〇<p>clone the repository and inspect the local files for the desired information</p>
 
 問題3:
 Companies adopt InnerSource as a development methodology for which of the following reasons? (select three)
-〇
-〇
-〇
-〇
+〇<p>Organizational policies prohibit the company from developing open-source code.</p>
+〇<p>To apply the principles and methodologies commonly associated with open source projects to internal software development processes.</p>
+〇<p>Foster open collaboration and encourage more contributions to company development intiatives.</p>
+〇<p>Help their team's discover, customize, and reuse existing internal projects.</p>
 
 問題4:
 What is the primary purpose of GitHub Pages, and in what scenarios would you typically use them?
-〇
-〇
-〇
-〇
+〇<p>GitHub Pages serve as a version control system for managing changes in a repository</p>
+〇<p>GitHub Pages are meant for hosting and displaying the repository's source code for public viewing</p>
+〇<p>GitHub Pages allow you to run server-side scripts to enhance the functionality of a repository</p>
+〇<div data-purpose="safely-set-inner-html:rich-text-viewer:html" class="mc-quiz-answer--answer-body--V-o8d rt-scaffolding"><p>GitHub Pages allow you to publish web pages directly from your repository, making them ideal for showcasing project documentation, a portfolio, or project-related content</p></div>
 
 問題5:
 You need to run multiple scripts whenever files in your repository are modified. What GitHub Actions component consists of a series of steps that run on the same runner?
-〇
-〇
-〇
-〇
+〇job
+〇event
+〇action
+〇workflow
 
 問題6:
 What is the purpose of a repository in the context of Git or GitHub?
-〇
-〇
-〇
-〇
+〇<p>a specific commit in the version history</p>
+〇the working directory where files are edited
+〇<p>a discussion forum for project-related topics</p>
+〇<p>a storage location containing project files, commit history, and related information</p>
 
 問題7:
 What is the purpose of Wiki pages and how are they typically utilized in GitHub projects?
-〇
-〇
-〇
-〇
+〇<p>to create private spaces only available to repository administrators</p>
+〇<p>to quickly tell what your project can do on the home page of the repository</p>
+〇<p>to share long-form content about your project, such as how to use it, how you designed it, or its core principles</p>
+〇<p>they are used for tracking issues and managing project tasks</p>
 
 問題8:
 A friend of yours is interested in helping contribute to a new Java application you are writing.  You want to provide her access to your personal GitHub repository so she can review and perform updates.  How can you achieve this in the most secure method possible?
-〇
-〇
-〇
-〇
+〇invite her as a collaborator to the GitHub repository
+〇<p>provide her owner permission so that she can add herself to code repository and invite others if she believes they can help</p>
+〇<p>share your GitHub username and password with her to enable direct access</p>
+〇<p>make the repository public to allow her to contribute without additional permissions</p>
 
 問題9:
 How many people are limited to being assigned per issue and pull requests in public vs. private repositories on GitHub’s free plan?
-〇
-〇
-〇
-〇
+〇<p>up to 10 people for a public repository, 1 person for a private repository</p>
+〇<p>there are no limits for either public or private repositories</p>
+〇<p>only 1 person for a public repository, up to 10 people for a private repository</p>
+〇<p>up to 10 people for a public repository and up to 10 people for a private repository</p>
 
 問題10:
 What is the easiest way to get started with GitHub Copilot?
-〇
-〇
-〇
-〇
+〇<p>use the Copilot website and paste your code when asking for suggestions</p>
+〇<p>install the Copilot extension in your preferred environment, such as Visual Studio Code</p>
+〇<p>request access from GitHub Support and wait for approval before using GitHub Copilot</p>
+〇<p>create a new public GitHub repo and enable Copilot to scan your code and make suggestions</p>
 
 問題11:
 Which of the following is not a valid open source software license?
-〇
-〇
-〇
-〇
+〇EULA
+〇MIT
+〇Apache2.0
+〇GNU General Public License
 
 問題12:
 Your organization wants to use GitHub Codespaces to test the development of its latest application. However, no one wants to use their personal credit card for the charges. How can you centralize the costs and bill the organization directly?
-〇
-〇
-〇
-〇
+〇<p>manually configure your Azure subscription to recognize your GitHub account by updating the subscription settings</p>
+〇<p>use the "Add Azure Subscription" button in your GitHub organization settings to link your GitHub account with the Azure subscription</p>
+〇<p>update your GitHub account settings to include Azure subscription details in the "Billing" section</p>
+〇<p>open a support ticket with GitHub requesting a connection to an Azure subscription</p>
 
 問題13:
 Which of the following security and analysis settings are always enabled on public repositories?
-〇
-〇
-〇
-〇
+〇vulnerability reporting
+〇secret scanning alerts for users
+〇dependabot alerts
+〇dependency graph
 
 問題14:
 What is the basic element of GitHub where users can store your code or files and view their revision history?
-〇
-〇
-〇
-〇
+〇issue
+〇branch
+〇commit
+〇repository
 
 問題15:
 A user has submitted a duplicate issue to your project. How can you show that a fix is in progress and easily reference the original issue?
-〇
-〇
-〇
-〇
+〇<p>click the <code>Close issue</code> button for the duplicated issue. Email the user a link to the issue that is in progress</p>
+〇<p>drag and drop the newly submitted issue on the original issue in the GitHub UI. This will close the duplicate issue while linking it to the original</p>
+〇<p>type <code>Duplicate of</code> followed by the issue number it duplicates in the body of a new comment</p>
+〇<p>filter the issues in the repository by Recently updated, and provide a 👎 reaction to indicate that it will be closed</p>
 
 問題16:
 How can a repository administrator determine if a person has a conflicting set of permissions on their code repository?
-〇
-〇
-〇
-〇
+〇<p>check the repository insights for permission conflicts</p>
+〇<p>there is no way to determine conflicting permissions</p>
+〇<p>use a third-party permission checker tool</p>
+〇<p>navigate to the manage access under repository settings look for the mixed roles warning message</p>
 
 問題17:
 What's the appropriate repository permission level for contributors who need to proactively manage issues, discussions, and pull requests without write access?
-〇
-〇
-〇
-〇
+〇write
+〇maintain
+〇triage
+〇admin
 
 問題18:
 What is the primary benefit of using a distributed Version Control System (VCS) such as Git?
-〇
-〇
-〇
-〇
+〇<p>systems used to create distributed version control systems are required to be deployed across many different cloud providers to reduce or eliminate a single point of failure</p>
+〇<p>files are stored on both the server and client, allowing users to work independently, make changes offline, and collaborate with others by merging changes</p>
+〇<p>changes are evaluated and go through automatic resolution for all coding conflicts, removing manual intervention and decision-making in complex merging scenarios</p>
+〇<p>project files are stored on a centralized server and accessed remotely to ensure there is a single source of truth for all files</p>
 
 問題19:
 Jessica is interested in centrally managing identity and access for her enterprise members on GitHub with Enterprise Managed Users. Why would Jessica choose to use managed user accounts?
-〇
-〇
-〇
-〇
+〇<p>to centrally provision and manage access for her enterprise members on GitHub.com and require authentication via her enterprise IdP</p>
+〇<p>to limit the number of GitHub.com accounts her team needs to maintain for open source projects</p>
+〇<p>to provide users flexibility and self-service capabilites, such as being able to change their GitHub profile name and email address</p>
+〇<p>to allow members the ability to make both public and private contributions to GitHub.com repositories</p>
 
 問題20:
 What is the advantage of using the GitHub Actions (CI/CD) platform in development?
-〇
-〇
-〇
-〇
+〇<p>improve automated code completion and security remediation&nbsp; </p>
+〇<p>streamline your development through automated testing and deployment</p>
+〇<p>the ability to post snippets of code to share with other collaborators</p>
+〇<p>the ability to host a website that highlights information about your project</p>
 
 問題21:
 GitHub supports using a TOTP app for two-factor authentication.  How would you configure GitHub to use a TOTP app?
-〇
-〇
-〇
-〇
+〇<p>Use the recovery codes generated by GitHub for TOTP setup</p>
+〇<p>Receive a confirmation email from GitHub with TOTP setup instructions</p>
+〇<p>use a required GitHub approved TOTP app</p>
+〇<p>Scan the QR code provided by GitHub with the TOTP app</p>
 
 問題22:
 What is the primary purpose of starring repositories on GitHub? (select three)
-〇
-〇
-〇
-〇
+〇<p>makes it easy to find a repository or topic again later</p>
+〇<p>show appreciation to the repository maintainer for their work</p>
+〇<p>organize repositories into lists for better personal project management</p>
+〇<p>to discover similar projects on GitHub on your personal dashboard</p>
 
 問題23:
 As a developer, you are facing an issue while working on a temporary laptop that lacks the necessary tools to edit the code in your repository. What GitHub feature will allow you to directly edit the file using a familiar interface?
-〇
-〇
-〇
-〇
+〇<p>clone the repository and use the built-in desktop editor to change the file</p>
+〇<p>use GitHub Actions to edit the desired file and push the change to the default branch</p>
+〇<p>create a new issue in the repository and add it to the project</p>
+〇<p>use the github.dev editor to edit your code within the GitHub web interface</p>
 
 問題24:
 What is the primary purpose of milestones in GitHub projects?
-〇
-〇
-〇
-〇
+〇<p>to organize repositories into specific categories</p>
+〇<p>to track the number of contributions</p>
+〇<p>to manage user access permissions</p>
+〇<p>to track progress on groups of issues or pull requests in a repository</p>
 
 問題25:
 You are managing a software development project on GitHub using Projects. The team has identified specific phases of work, and you want to organize tasks into groups to track progress. What feature can you use in GitHub Projects to achieve this goal?
-〇
-〇
-〇
-〇
+〇milestones
+〇assignees
+〇issues
+〇labels
 
 問題26:
 Jessica would like to follow the HashiCorp organization on GitHub.  What is the correct way to achieve this?
-〇
-〇
-〇
-〇
+〇<p>Navigate to GitHub Discussions and search for the HashiCorp organization.</p>
+〇<p>Navigate to the HashiCorp user's profile page and under the profile picture, click Follow.</p>
+〇<p>Navigate to her GitHub personal account settings and search for the HashiCorp organization</p>
+〇<p>Navigate to the HashiCorp organization page and in the top-right corner, click Follow.</p>
 
 問題27:
 Which of the following best describes a table layout in GitHub projects?
-〇
-〇
-〇
-〇
+〇<p>a visual map with interconnected nodes that hold your issues, pull requests, and draft issues</p>
+〇<p>a configurable timespan to track your issues, pull requests, and draft issues on a timeline</p>
+〇<p>customizable columns with your issues, pull requests, and draft issues</p>
+〇<p>a powerful and adaptable spreadsheet with your issues, pull requests, and draft issues</p>
 
 問題28:
 How can a user create an issue in a GitHub repository?
-〇
-〇
-〇
-〇
+〇<p>using the "New issue" button on the repository's issues tab</p>
+〇<p>through the "Clone or download" button on the repository page</p>
+〇<p>by submitting a pull request with the proposed changes</p>
+〇<p>by forking the repository and making changes in the fork</p>
 
 問題29:
 What is a pull request template?
-〇
-〇
-〇
-〇
+〇A pull request template provides information that cannot be overwritten by a project contributor when they open a pull request.
+〇<p>Pull request template provides guidance and structure a contributor should include when creating a pull request.</p>
+〇<p>A pull request template is automatically generated when a new branch is created.</p>
+〇<div data-purpose="safely-set-inner-html:rich-text-viewer:html" class="mc-quiz-answer--answer-body--V-o8d rt-scaffolding"><p>A pull request template is chosen by project contributors when creating new pull requests.</p></div>
 
 問題30:
 GitHub offers a number of security features.  What is true about the setup of these features?
-〇
-〇
-〇
-〇
+〇<p>repository administrators and organization owners can configure repository security settings.</p>
+〇<p>GitHub security features are solely dependent on the programming languages used in the repository.</p>
+〇<p>GitHub Advanced Security features are enabled for all repositories on GitHub.com.</p>
+〇<p>security features are automatically enabled on every repository</p>
 
 問題31:
 Gabriel wants to create a local copy of a repository from GitHub on his computer. What is the correct way for him to achieve this?
-〇
-〇
-〇
-〇
+〇<p>use the "Fork" button on the repository's GitHub page</p>
+〇<p>copy and paste the repository's files into a new local folder</p>
+〇<p>download a ZIP file from the repository's GitHub page</p>
+〇<p>clone the repository using the "git clone" command in the terminal or command prompt</p>
 
 問題32:
 Which of the following aspects distinguishes Projects Classic from Projects?
-〇
-〇
-〇
-〇
+〇<p>Projects Classic uses a different version control system than Projects</p>
+〇<p>Projects has limited integration capabilities compared to Projects Classic</p>
+〇<p>Projects Classic provides a simpler and more streamlined project management experience</p>
+〇<p>Projects Classic is designed exclusively for open-source projects</p>
 
 問題33:
 What is the definition of a remote in the context of Git terminology?
-〇
-〇
-〇
-〇
+〇<p>a local branch that is isolated from the main project.</p>
+〇<p>the process of merging changes from one branch to another</p>
+〇<p>the working directory where files are actively edited</p>
+〇<p>a server or repository URL where Git can fetch or push changes</p>
 
 問題34:
 What is the significance of having a single source of truth in project management?
-〇
-〇
-〇
-〇
+〇<p>it complicates information synchronization</p>
+〇<p>it facilitates easy updates and prevents information from getting out of sync</p>
+〇<p>it helps spread information across multiple locations</p>
+〇<p>it encourages redundancy in tracking data values</p>
 
 問題35:
 As a developer, you are considering using GitHub Copilot to assist in your code development. What precautions and GitHub features are recommended to ensure the security and quality of the code produced with GitHub Copilot? (select three)
-〇
-〇
-〇
-〇
+〇<p>rewrite all of the code that was produced by Copilot as it could include bugs or insecure coding patterns</p>
+〇<p>use GitHub Actions, Dependabot, CodeQL and code-scanning features</p>
+〇<p>tracking and scanning the code for security vulnerabilities</p>
+〇<p>take the same precautions when using code generated by GitHub Copilot that you would when using any code you didn't write yourself</p>
 
 問題36:
 GitHub Projects provide various default labels in every new repository. Which default label is NOT available in GitHub?
-〇
-〇
-〇
-〇
+〇"Bug"
+〇"Duplicate"
+〇"Community contribution"
+〇"Help wanted"
 
 問題37:
 Both github.dev and GitHub Codespaces allow you to edit your code straight from your repository. However, there are slight differences between them. Select the valid statements below (select three)
-〇
-〇
-〇
-〇
+〇<p>codespaces allow you to use most extensions in Visual Studio marketplace while github.dev on supports subset of extensions</p>
+〇<p>github.dev opens instantly with a key press while a codespace may take a few minutes to launch</p>
+〇<p>both github.dev and codespaces are available to everyone on GitHub.com</p>
+〇<p>both require associated compute to run which can be billed to your account</p>
 
 問題38:
 What is the recommended approach for streamlining collaboration among regular collaborators in a project?
-〇
-〇
-〇
-〇
+〇<p>avoiding version control systems altogether</p>
+〇<p>using a single repository and creating pull requests between branches</p>
+〇<p>creating separate repositories for each collaborator</p>
+〇<p>working in isolation without creating branches</p>
 
 問題39:
 Which elements are part of the basic formatting syntax in Markdown for Git or GitHub?
-〇
-〇
-〇
-〇
+〇<p>file imports, method declarations, and code execution blocks</p>
+〇<p>headings, links, task lists, and comments</p>
+〇<p>line breaks, indentation, and conditional statements</p>
+〇<p>function calls, class definitions, and variable assignments</p>
 
 問題40:
 Which term is NOT commonly used when working with GitHub repositories?
-〇
-〇
-〇
-〇
+〇merge
+〇fork
+〇copy
+〇remote
+〇upstream
+〇branch
+〇clone
 
 問題41:
 Sam is a developer who found helpful code in a repository on GitHub. To showcase his interest in the code base, GitHub allows Sam to: (select three)
-〇
-〇
-〇
-〇
+〇<p>Add himself to the code repository to begin contributing</p>
+〇<p>Download the code and customize it for his own use</p>
+〇<p>Star the repository or topic, to easily find it again later</p>
+〇<p>Follow people or organizations to stay updated on their activities</p>
 
 問題42:
 What are some of the reasons that a developer might choose to create a draft pull request in GitHub?
-〇
-〇
-〇
-〇
+〇<p>to immediately trigger automated testing and integration processes</p>
+〇<p>to gather feedback from team members on proposed changes without the need for a formal review process</p>
+〇<p>to mark changes as complete, preventing any collaboration until the code is finalized</p>
+〇<p>draft pull requests are mandatory for large codebases and cannot be avoided</p>
 
 問題43:
 Betty is a GitHub project manager who has grown tired of adding new issues to the project. What feature can Betty use to help streamline her project workflow?
-〇
-〇
-〇
-〇
+〇<p>Betty should create charts to visualize issues and add them to the project board</p>
+〇<div data-purpose="safely-set-inner-html:rich-text-viewer:html" class="mc-quiz-answer--answer-body--V-o8d rt-scaffolding"><p>Betty should configure the project's built-in workflows to automatically add new items as they are created or updated in a repository</p></div>
+〇<div data-purpose="safely-set-inner-html:rich-text-viewer:html" class="mc-quiz-answer--answer-body--V-o8d rt-scaffolding"><p>Betty can assign labels to issues manually to categorize them within the project board</p></div>
+〇<div data-purpose="safely-set-inner-html:rich-text-viewer:html" class="mc-quiz-answer--answer-body--V-o8d rt-scaffolding"><p>Betty should just engage in discussions to collectively decide which issues to add to the project board</p></div>
 
 問題44:
 When reviewing changes made by a team member to a file in GitHub, you want to add a comment in a conversation that also renders the specific lines of code as a code snippet. What feature can you use to do this easily?
-〇
-〇
-〇
-〇
+〇<p>click the + button next to each line of code to add a comment for each one</p>
+〇<p>create a new branch and submit a new merge request with inline comments</p>
+〇<p>take a screenshot of the code and paste it in the conversation</p>
+〇<p>create a permanent link to a specific line or range of lines of code</p>
 
 問題45:
 What is the relationship of commits on a pull request in GitHub?
-〇
-〇
-〇
-〇
+〇<p>When contributors submit pull requests, individual commits highlight the specific changes they made. Once approved, the pull request is merged into the default branch.</p>
+〇<p>Commits in a pull request are only visible to the pull request creator and are not part of the repository's commit history.</p>
+〇<p>Commits on a pull request collectively showcase the entire commit history of the repository.</p>
+〇<p>Each commit in a pull request usually tackles a separate issue or task, contributing independently to the base code.</p>
 
 問題46:
 When you take action on GitHub.com, such as creating an issue or reviewing a pull request, the action is attributed to what type of account?
-〇
-〇
-〇
-〇
+〇personal account
+〇enterprise account
+〇organization account
+〇paid account
 
 問題47:
 What are some of the features available in GitHub Desktop?
-〇
-〇
-〇
-〇
+〇<p>local repository management, branch creation, and a visual interface</p>
+〇<p>command-line interface for Git, real-time collaboration, and project milestones</p>
+〇<p>automated testing, continuous integration, and deployment pipelines</p>
+〇<p>web-based code editing, file versioning, and repository hosting</p>
 
 問題48:
 What accurately describes the lifecycle of a GitHub codespace?
-〇
-〇
-〇
-〇
+〇<p>a codespace can only be created from a feature branch of a repository</p>
+〇<p>codespaces are automatically deleted when a pull request is closed</p>
+〇<p>a GitHub codespace is automatically terminated after 24 hours of inactivity</p>
+〇<p>a codespace is automatically deleted after it has been stopped and has remained inactive for 30 days</p>
 
 問題49:
 In GitHub's Insights for Projects, you want to create a chart to visualize the distribution of open issues among your team members. What is the benefit of using filters during the chart creation process?
-〇
-〇
-〇
-〇
+〇<p>filters provide a way to customize the appearance of the chart's README file</p>
+〇<p>filters enable real-time collaboration on code editing within the GitHub repository</p>
+〇<p>filters are used to set access permissions for team members in a GitHub project</p>
+〇<p>filters allow you to customize the chart by highlighting items assigned to a particular label or assignee</p>
 
 問題50:
 What is the purpose of creating and using saved replies on GitHub?
-〇
-〇
-〇
-〇
+〇<p>used for tracking changes made by collaborators across different branches of a repository</p>
+〇<p>used to automatically generate new responses to commonly asked questions in the repository</p>
+〇<p>to help streamline code reviews and issue discussions by providing reusable responses to common comments or questions</p>
+〇<p>to store confidential information that can be shared across different repositories for enhanced collaboration</p>
 
 問題51:
 When setting up branch protection rules in a GitHub repository, what options are available for specifying the branches?
-〇
-〇
-〇
-〇
+〇<p>only for branches named "master" or "main"</p>
+〇<p>for branches with commit messages containing specific keywords for clarity</p>
+〇<p>specifically for branches modified by a designated team within the organization</p>
+〇<p>for a specific branch, all branches, or any branch that matches a name pattern you specify</p>
 
 問題52:
 As an organizational owner, you can assign a security manager role. What permissions are included in this role?
-〇
-〇
-〇
-〇
+〇<p>The ability to configure code security settings only at the organization level</p>
+〇<p>The ability to configure code security settings at the organization and repository level</p>
+〇<p>Inviting and removing collaborators in the organization</p>
+〇<p>Write access on all repositories in the organization</p>
 
 問題53:
 Who can receive financial contributions via GitHub Sponsors?  (select two)
-〇
-〇
-〇
-〇
+〇<p>Anyone with a GitHub sponsored developer profile</p>
+〇<p>Anyone who has made an active contribution on GitHub</p>
+〇<p>Anyone with a GitHub sponsored organization profile</p>
+〇<p>Anyone with an active GitHub membership</p>
 
 問題54:
 What is the maximum number of items for each GitHub project?
-〇
-〇
-〇
-〇
+〇"1,200"
+〇"100"
+〇"10,000"
+〇"10"
 
 問題55:
 Your manager has asked you to assist with code reviews on a project so the company can expedite the release of a patch for your customers. However, you find there are many pull requests, many of which don't pertain to the issue. How can you quickly find the pull requests to review and approve in the repository?
-〇
-〇
-〇
-〇
+〇<p>filter for draft pull requests in the project's repository</p>
+〇<p>filter pull requests that a reviewer has approved</p>
+〇<p>filter for pull requests that are linked to the issue that the pull request may close</p>
+〇<p>filter pull requests in which a reviewer has asked for changes</p>
 
 問題56:
 In the context of GitHub Actions, what is the role of a "runner," and how does it contribute to the workflow execution process?
-〇
-〇
-〇
-〇
+〇<p>a runner is a specific GitHub repository where actions are defined and configured for workflow automation</p>
+〇<p>a runner is a visual representation of the workflow execution progress displayed on the GitHub dashboard</p>
+〇<p>a runner is a designated person responsible for overseeing and managing GitHub Actions within a repository</p>
+〇<p>a runner is a GitHub Actions component responsible for executing jobs and provides the necessary environment for job execution</p>
 
 問題57:
 GitHub recommends enabling 2FA for which group of users?
-〇
-〇
-〇
-〇
+〇<p>billing managers, as they manage the payment information for a GitHub organization</p>
+〇<p>code repository collaborators, as they have the most interaction with the code base</p>
+〇<p>all users, regardless of their roles or permissions</p>
+〇<p>organizaton owners, as they have the most extensive permissions</p>
 
 問題58:
 You have found an interesting public repository and want to receive notifications only when new releases are made available. What GitHub feature can you use to accomplish this?
-〇
-〇
-〇
-〇
+〇<p>use the <code>Watch</code> feature and select the <code>All Activity</code> option. </p>
+〇<p>use the <code>Watch</code> feature on the repository. Click on the Custom option and select <code>Releases</code> as the type of event.</p>
+〇<p>use the <code>Watch</code> feature and select the All Activity option. Then create a <code>.gitignore</code> file and ignore all event types except for <code>Releases</code> </p>
+〇<p>fork the repository and then use the <code>Watch</code> feature to ensure you get notified of future changes</p>
 
 問題59:
 You are a Project Manager, and want to track the progress of your issues over time. You need to show how much work is completed and how much is left to do. What type of chart should you create using insights for Projects?
-〇
-〇
-〇
-〇
+〇<p>use a <code>Burn Up</code> chart</p>
+〇<p>create a <code>Cumulative Flow</code> diagram</p>
+〇<p>use the <code>Velocity</code> chart</p>
+〇<p>use the default <code>Contribution</code> graph</p>
 
 問題60:
 What permissions can be assigned to provide granular access to a repository owned by your personal GitHub account?
-〇
-〇
-〇
-〇
+〇billing manager role
+〇triage
+〇<p>you cannot assign granular level access on a personal account</p>
+〇maintain
+
+
+
+
+
 
