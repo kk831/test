@@ -440,143 +440,144 @@ Whenever you work in a GitHub codespace, what type of machine are you working on
 
 問題1:
 How can you initiate the creation of a GitHub codespace?
-〇
-〇
-〇
-〇
+〇<p>clone the repository to your local machine</p>
+〇<p>click on the "Code" button and select "Download ZIP"</p>
+〇<p>use the "Code" button and choose "Open with Codespaces"</p>
+〇<p>open a pull request on the repository</p>
 
 問題2:
 When you fork a repository on GitHub, what is the term used to refer to the original repository from which the fork was created?
-〇
-〇
-〇
-〇
+〇forked repo
+〇upstream repo
+〇parent repo
+〇source repo
 
 問題3:
 Ramesh is working on a complex software project in a GitHub codespace, and he notices that the current machine type doesn't provide the necessary performance for development tasks. What steps should Ramesh take to reconfigure the codespace so it meets his requirements?
-〇
-〇
-〇
-〇
+〇<p>clone the repository and create a new codespace from scratch with the desired machine type</p>
+〇<p>open a support ticket with GitHub to request a machine type change for his codespace</p>
+〇<p>use the GitHub codespace settings to change the machine type according to his performance requirements</p>
+〇<p>manually install a more powerful machine type on his local development machine</p>
 
 問題4:
 Which of the following features is NOT available in GitHub Mobile?
-〇
-〇
-〇
-〇
+〇manage, triage, and clear notifications
+〇<p>web-based code editing in pull requests</p>
+〇read, review, and collaborate on issues and pull requests
+〇<p>automated testing and continuous integration</p>
 
 問題5:
 Phil is an organization owner who provides different levels of access to private repositories owned by his organization. Who can Phil provide access to?
-〇
-〇
-〇
-〇
+〇<p>Phil cannot provide access as an organization owner due to seperation of duties</p>
+〇<p>Phil can provide access to organization members, outside collaborators, and teams of people by utilizing roles and permissions for appropriate access levels.</p>
+〇<p>Phil can provide access to organization members and outside collaborators regardless if they have a GitHub account.</p>
+〇<p>Phil can provide access to organization members and teams but not to outside collaborators</p>
 
 問題6:
 What is the purpose of branch protection?
-〇
-〇
-〇
-〇
+〇<p>to limit the number of commits allowed on a branch</p>
+〇<p>to prevent accidental or unauthorized changes to branches</p>
+〇<p>to enforce two-factor authentication for repository contributors</p>
+〇<p>to automatically quarantine branches with suspicious code</p>
 
 問題7:
 Which of the following would be considered an event that causes a workflow to run? (select three)
-〇
-〇
-〇
-〇
+〇changing a setting in the reository
+〇opening an issue
+〇a push commit
+〇a pull request
 
 問題8:
 You've come across a GitHub Gist containing a useful code snippet that was created by another user, but you want to make modifications to it for your own use. What is the appropriate action to take?
-〇
-〇
-〇
-〇
+〇<p>share the Gist URL with others to collaborate on the modifications</p>
+〇<p>fork the Gist, or clone the Gist to your local machine and make the necessary modifications</p>
+〇<p>create a new pull request and ask the owner to approve and merge the changes</p>
+〇<p>download the Gist files individually and then upload them to your own Gist</p>
 
 問題9:
 What best practices and features are suggested to maintain a repository properly? (select three)
-〇
-〇
-〇
-〇
+〇<p>create a <code>README</code> file to document the project</p>
+〇<p>delete commit history to reduce space</p>
+〇<p>favor branching over forking</p>
+〇<p>enable Git Large File Storage where needed</p>
 
 問題10:
 Which of the following statements is true regarding assigning users to an issue or pull request in GitHub? (select three)
-〇
-〇
-〇
-〇
+〇<p>anyone with write access to a repository can assign issues and pull requests.</p>
+〇<p>assignees clarify who is working on specific issues and pull requests</p>
+〇<p>you can assign an unlimited number of assignees to an issue or pull request</p>
+〇<p>you can assign multiple people to each issue or pull request</p>
 
 問題11:
 You have created a new repository from the GitHub UI and included a blank README file. However, you need to create the repository with an existing README to make it easier to include documentation about the project. What is the best approach to saving time and repeating work each time a new repo is created?
-〇
-〇
-〇
-〇
+〇<p>create a new repository by forking an existing project and removing the unneeded files</p>
+〇<p>for each new repository, create a new branch, update the <code>README</code> file, and merge the changes into the main branch</p>
+〇<p>create new repositories from a repository template that includes the desired files and structure for future projects</p>
+〇<p>clone the repository to your local machine, update the files, and push the updated content to GitHub</p>
 
 問題12:
 Claire would like to keep up with the recent activity on repositories owned by her organization. What organization feature should she access to do so?
-〇
-〇
-〇
-〇
+〇GitHub organization news feed
+〇GitHub reository insights
+〇GitHub issues
+〇GitHub notifications
 
 問題13:
 What is the main benefit of using milestones in a collaborative project?
-〇
-〇
-〇
-〇
+〇<p>milestones enforce coding standards to ensure all collaborators are developing code in the same way</p>
+〇<p>milestones automatically close completed issues after they have been resolved</p>
+〇<p>milestones provide a visual roadmap to track progress on issues or pull requests</p>
+〇<p>milestones enable real-time code collaboration for resolving an issue</p>
 
 問題14:
 What is the difference between an issue template and an issue form?
-〇
-〇
-〇
-〇
+〇<p>issue templates are built in Markdown, while issue forms require knowledge of HTML to build out different components of the desired form to capture data from the user submitting the issue in GitHub</p>
+〇<p>issue templates are submitted through the GitHub UI, but issue forms are committed directly to the repository through a merge request</p>
+〇<p>issue templates merely provide text that contributors can remove and replace with their own input, but a form enables you to build structured forms with required fields and easy-to-follow steps to ensure you don't miss important details</p>
+〇<p>issue templates are provided by GitHub by default, but issue forms are found in the GitHub Marketplace and can help with quickly resolving issues submitted by users</p>
 
 問題15:
 What two types of projects can you create when using GitHub Projects? (select two)
-〇
-〇
-〇
-〇
+〇milestone projectd
+〇user project
+〇team project
+〇organization project
 
 問題16:
 What is a valid way to add a pull request template to your GitHub repository? 
-〇
-〇
-〇
-〇
+〇<p>place the repository's <code>pull_request</code> directory, name the pull request template <code>pull_request_template.md</code> </p>
+〇<p>create the pull request template visible in the repository's root directory with the name <code>pull_request_template.md</code> </p>
+　<p>create the pull request template visible in the repository's root directory with the name <code>pull_request_template.md</code> </p>
+〇<p>create the pull request template visible in the repository's root directory with the name <code>template_pull_request.md</code> </p>
+〇<p>store your file in a hidden directory, name the pull request template <code>.pull_request/pull_request_template.md</code> </p>
 
 問題17:
 Which statement accurately reflects how the quality of suggestions in GitHub Copilot may be influenced?
-〇
-〇
-〇
-〇
+〇<p>GitHub Copilot provides equally robust suggestions for all programming languages, irrespective of their representation in public repositories</p>
+〇<p>The quality of GitHub Copilot suggestions is not affected by the volume and diversity of training data for each programming language</p>
+〇<p>Programming languages with less representation in public repositories may result in fewer or less robust suggestions in GitHub Copilot</p>
+〇<p>GitHub Copilot is primarily focused on a few popular languages and does not support suggestions for less common languages</p>
 
 問題18:
 How do Projects and Projects Classic differ regarding integration capabilities with external tools and services?
-〇
-〇
-〇
-〇
+〇<p>neither Projects nor Projects Classic offer integration features with external tools and services</p>
+〇<p>Projects and Projects Classic have the same integration capabilities</p>
+〇<p>Projects provides more robust integrations with external tools</p>
+〇<p>Projects Classic has more extensive integration options</p>
 
 問題19:
 What is true about choosing internal visibility for a repository?
-〇
-〇
-〇
-〇
+〇<p>you can use internal repositories to practice "innersource" within your enterprise</p>
+〇<p>you can limit accessibility to internal repositories to people you explicitly share access with </p>
+〇<p>you can allow managed user accounts can fork internal repositories</p>
+〇<p>you can limit organization owners from having access to your code</p>
 
 問題20:
 You want to create a template repository in your GitHub account. How can you achieve this?
-〇
-〇
-〇
-〇
+〇<p>manually copy and paste the repository structure and files into the new repository</p>
+〇<p>retrieve a template repository from the GitHub marketplace</p>
+〇<p>mark an existing repository as a template in the repository settings</p>
+〇<p>templates of repositories are automatically created when a repository is made</p>
 
 問題21:
 When following an organization on GitHub, you will be able to see public activity on your personal dashboard for all of the following, except:
