@@ -878,3 +878,423 @@ When reviewing a pull request on GitHub, what is the purpose of the "Files chang
 
 
 
+問題1:
+Gabe has recently changed the visibility of his code repository from public to private. What is the impact of doing so?
+〇
+〇
+〇
+〇
+
+問題2:
+David wants to analyze statistics, traffic, and other data for his GitHub repository. What is the correct way for him to access this repository data?
+〇
+〇
+〇
+〇
+
+問題3:
+Companies adopt InnerSource as a development methodology for which of the following reasons? (select three)
+〇
+〇
+〇
+〇
+
+問題4:
+What is the primary purpose of GitHub Pages, and in what scenarios would you typically use them?
+〇
+〇
+〇
+〇
+
+問題5:
+You need to run multiple scripts whenever files in your repository are modified. What GitHub Actions component consists of a series of steps that run on the same runner?
+〇
+〇
+〇
+〇
+
+問題6:
+What is the purpose of a repository in the context of Git or GitHub?
+〇
+〇
+〇
+〇
+
+問題7:
+What is the purpose of Wiki pages and how are they typically utilized in GitHub projects?
+〇
+〇
+〇
+〇
+
+問題8:
+A friend of yours is interested in helping contribute to a new Java application you are writing.  You want to provide her access to your personal GitHub repository so she can review and perform updates.  How can you achieve this in the most secure method possible?
+〇
+〇
+〇
+〇
+
+問題9:
+How many people are limited to being assigned per issue and pull requests in public vs. private repositories on GitHub’s free plan?
+〇
+〇
+〇
+〇
+
+問題10:
+What is the easiest way to get started with GitHub Copilot?
+〇
+〇
+〇
+〇
+
+問題11:
+Which of the following is not a valid open source software license?
+〇
+〇
+〇
+〇
+
+問題12:
+Your organization wants to use GitHub Codespaces to test the development of its latest application. However, no one wants to use their personal credit card for the charges. How can you centralize the costs and bill the organization directly?
+〇
+〇
+〇
+〇
+
+問題13:
+Which of the following security and analysis settings are always enabled on public repositories?
+〇
+〇
+〇
+〇
+
+問題14:
+What is the basic element of GitHub where users can store your code or files and view their revision history?
+〇
+〇
+〇
+〇
+
+問題15:
+A user has submitted a duplicate issue to your project. How can you show that a fix is in progress and easily reference the original issue?
+〇
+〇
+〇
+〇
+
+問題16:
+How can a repository administrator determine if a person has a conflicting set of permissions on their code repository?
+〇
+〇
+〇
+〇
+
+問題17:
+What's the appropriate repository permission level for contributors who need to proactively manage issues, discussions, and pull requests without write access?
+〇
+〇
+〇
+〇
+
+問題18:
+What is the primary benefit of using a distributed Version Control System (VCS) such as Git?
+〇
+〇
+〇
+〇
+
+問題19:
+Jessica is interested in centrally managing identity and access for her enterprise members on GitHub with Enterprise Managed Users. Why would Jessica choose to use managed user accounts?
+〇
+〇
+〇
+〇
+
+問題20:
+What is the advantage of using the GitHub Actions (CI/CD) platform in development?
+〇
+〇
+〇
+〇
+
+問題21:
+GitHub supports using a TOTP app for two-factor authentication.  How would you configure GitHub to use a TOTP app?
+〇
+〇
+〇
+〇
+
+問題22:
+What is the primary purpose of starring repositories on GitHub? (select three)
+〇
+〇
+〇
+〇
+
+問題23:
+As a developer, you are facing an issue while working on a temporary laptop that lacks the necessary tools to edit the code in your repository. What GitHub feature will allow you to directly edit the file using a familiar interface?
+〇
+〇
+〇
+〇
+
+問題24:
+What is the primary purpose of milestones in GitHub projects?
+〇
+〇
+〇
+〇
+
+問題25:
+You are managing a software development project on GitHub using Projects. The team has identified specific phases of work, and you want to organize tasks into groups to track progress. What feature can you use in GitHub Projects to achieve this goal?
+〇
+〇
+〇
+〇
+
+問題26:
+Jessica would like to follow the HashiCorp organization on GitHub.  What is the correct way to achieve this?
+〇
+〇
+〇
+〇
+
+問題27:
+Which of the following best describes a table layout in GitHub projects?
+〇
+〇
+〇
+〇
+
+問題28:
+How can a user create an issue in a GitHub repository?
+〇
+〇
+〇
+〇
+
+問題29:
+What is a pull request template?
+〇
+〇
+〇
+〇
+
+問題30:
+GitHub offers a number of security features.  What is true about the setup of these features?
+〇
+〇
+〇
+〇
+
+問題31:
+Gabriel wants to create a local copy of a repository from GitHub on his computer. What is the correct way for him to achieve this?
+〇
+〇
+〇
+〇
+
+問題32:
+Which of the following aspects distinguishes Projects Classic from Projects?
+〇
+〇
+〇
+〇
+
+問題33:
+What is the definition of a remote in the context of Git terminology?
+〇
+〇
+〇
+〇
+
+問題34:
+What is the significance of having a single source of truth in project management?
+〇
+〇
+〇
+〇
+
+問題35:
+As a developer, you are considering using GitHub Copilot to assist in your code development. What precautions and GitHub features are recommended to ensure the security and quality of the code produced with GitHub Copilot? (select three)
+〇
+〇
+〇
+〇
+
+問題36:
+GitHub Projects provide various default labels in every new repository. Which default label is NOT available in GitHub?
+〇
+〇
+〇
+〇
+
+問題37:
+Both github.dev and GitHub Codespaces allow you to edit your code straight from your repository. However, there are slight differences between them. Select the valid statements below (select three)
+〇
+〇
+〇
+〇
+
+問題38:
+What is the recommended approach for streamlining collaboration among regular collaborators in a project?
+〇
+〇
+〇
+〇
+
+問題39:
+Which elements are part of the basic formatting syntax in Markdown for Git or GitHub?
+〇
+〇
+〇
+〇
+
+問題40:
+Which term is NOT commonly used when working with GitHub repositories?
+〇
+〇
+〇
+〇
+
+問題41:
+Sam is a developer who found helpful code in a repository on GitHub. To showcase his interest in the code base, GitHub allows Sam to: (select three)
+〇
+〇
+〇
+〇
+
+問題42:
+What are some of the reasons that a developer might choose to create a draft pull request in GitHub?
+〇
+〇
+〇
+〇
+
+問題43:
+Betty is a GitHub project manager who has grown tired of adding new issues to the project. What feature can Betty use to help streamline her project workflow?
+〇
+〇
+〇
+〇
+
+問題44:
+When reviewing changes made by a team member to a file in GitHub, you want to add a comment in a conversation that also renders the specific lines of code as a code snippet. What feature can you use to do this easily?
+〇
+〇
+〇
+〇
+
+問題45:
+What is the relationship of commits on a pull request in GitHub?
+〇
+〇
+〇
+〇
+
+問題46:
+When you take action on GitHub.com, such as creating an issue or reviewing a pull request, the action is attributed to what type of account?
+〇
+〇
+〇
+〇
+
+問題47:
+What are some of the features available in GitHub Desktop?
+〇
+〇
+〇
+〇
+
+問題48:
+What accurately describes the lifecycle of a GitHub codespace?
+〇
+〇
+〇
+〇
+
+問題49:
+In GitHub's Insights for Projects, you want to create a chart to visualize the distribution of open issues among your team members. What is the benefit of using filters during the chart creation process?
+〇
+〇
+〇
+〇
+
+問題50:
+What is the purpose of creating and using saved replies on GitHub?
+〇
+〇
+〇
+〇
+
+問題51:
+When setting up branch protection rules in a GitHub repository, what options are available for specifying the branches?
+〇
+〇
+〇
+〇
+
+問題52:
+As an organizational owner, you can assign a security manager role. What permissions are included in this role?
+〇
+〇
+〇
+〇
+
+問題53:
+Who can receive financial contributions via GitHub Sponsors?  (select two)
+〇
+〇
+〇
+〇
+
+問題54:
+What is the maximum number of items for each GitHub project?
+〇
+〇
+〇
+〇
+
+問題55:
+Your manager has asked you to assist with code reviews on a project so the company can expedite the release of a patch for your customers. However, you find there are many pull requests, many of which don't pertain to the issue. How can you quickly find the pull requests to review and approve in the repository?
+〇
+〇
+〇
+〇
+
+問題56:
+In the context of GitHub Actions, what is the role of a "runner," and how does it contribute to the workflow execution process?
+〇
+〇
+〇
+〇
+
+問題57:
+GitHub recommends enabling 2FA for which group of users?
+〇
+〇
+〇
+〇
+
+問題58:
+You have found an interesting public repository and want to receive notifications only when new releases are made available. What GitHub feature can you use to accomplish this?
+〇
+〇
+〇
+〇
+
+問題59:
+You are a Project Manager, and want to track the progress of your issues over time. You need to show how much work is completed and how much is left to do. What type of chart should you create using insights for Projects?
+〇
+〇
+〇
+〇
+
+問題60:
+What permissions can be assigned to provide granular access to a repository owned by your personal GitHub account?
+〇
+〇
+〇
+〇
+
