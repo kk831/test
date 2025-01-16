@@ -1,0 +1,80 @@
+コードスキャンとは？
+コードスキャンは、GitHub リポジトリ内のコードを分析してセキュリティの脆弱性やコーディングエラーを検出するための機能です。CodeQL というコード分析エンジンを使用して、コード内の既存の問題を検出し、トリアージし、修正の優先度を付けることができます。コードスキャンの結果は GitHub のリポジトリの [セキュリティ] タブにアラートとして表示されます。
+
+CodeQL とは？
+CodeQL は GitHub によって開発されたコード分析エンジンで、コードをデータのように扱い、潜在的な脆弱性を高精度で検出します。CodeQL は以下の言語に対応しています:
+
+C/C++
+C#
+Go
+Java/Kotlin
+JavaScript/TypeScript
+Python
+Ruby
+Swift
+コードスキャンの設定方法
+コードスキャンを設定するには、主に以下の 3 つの方法があります:
+
+既定のセットアップ: GitHub Actions により自動で CodeQL 分析を構成する方法。
+高度なセットアップ: CodeQL ワークフローをリポジトリに直接追加し、カスタマイズ可能なワークフローを使用する方法。
+CodeQL CLI の使用: 外部 CI システムで CodeQL CLI を実行し、結果を GitHub にアップロードする方法。
+既定のセットアップで CodeQL を有効にする手順
+リポジトリのメインページに移動し、[セキュリティ] タブを選択します。
+Set up code scanning をクリックします。
+[設定] ドロップダウンで [既定] を選択します。
+必要に応じて [編集] ボタンを選択し、CodeQL の実行方法をカスタマイズします。
+[CodeQL を有効にする] を選択します。
+高度なセットアップ
+高度なセットアップでは、以下のように CodeQL ワークフロー ファイルをリポジトリに追加します:
+
+リポジトリに .github/workflows/codeql-analysis.yml ファイルを作成します。
+次の内容をファイルに記述します:
+YAML
+name: "CodeQL"
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [main]
+  schedule:
+    - cron: '0 0 * * 0'
+
+jobs:
+  analyze:
+    name: Analyze
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [ 'javascript', 'python' ]
+        # CodeQL supports [ 'cpp', 'csharp', 'go', 'java', 'javascript', 'python', 'ruby', 'swift' ]
+        # Learn more about CodeQL language support at https://aka.ms/codeql-docs/language-support
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@v1
+      with:
+        languages: ${{ matrix.language }}
+
+    - name: Autobuild
+      uses: github/codeql-action/autobuild@v1
+
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v1
+Public code references from 13 repositories
+このファイルは、main ブランチへのプッシュやプルリクエストが作成されるたびに CodeQL 分析を実行します。
+
+GitHub Actions の請求について
+GitHub Actions を使用したコードスキャンは、使用した時間 (分) に基づいて請求されます。パブリック リポジトリやセルフホステッド ランナーでは無料ですが、プライベート リポジトリでは使用量に応じた課金が発生します。各アカウントには一定の無料時間 (分) とストレージが含まれ、それを超えると追加料金が発生します。
+
+これらの基本的な理解に基づいて、次に進むための詳細な設定や活用方法を学んでいきましょう。
