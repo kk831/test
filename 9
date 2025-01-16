@@ -1,0 +1,127 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+■ コード スキャンの概要
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+コード スキャン (CodeQL 分析など) は、リポジトリ内の脆弱性やエラーを検知する仕組みです。
+GitHub Actions や外部の継続的インテグレーション (CI) システムなど、さまざまな方法で実行できます。
+GitHub の [Settings] → [Code security and analysis] → [Code scanning] (日本語環境の場合は [設定] → [コードのセキュリティと分析] → [コード スキャン]) から設定画面を開き、[詳細に切り替える] オプションを選択するなどして 詳細構成のワークフローを有効にできます。
+コード スキャンには CodeQL 分析以外にも、GitHub Marketplace などから独自のツールを導入することも可能です。
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+■ ワークフロー ファイルの場所と編集方法
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+GitHub Actions のワークフローは、基本的にリポジトリの「.github/workflows/」フォルダーに配置された YAML ファイルで構成されます。
+CodeQL 分析ワークフローのデフォルトのファイル名は「codeql-analysis.yml」です。
+編集するにはリポジトリの [Code] タブ (ファイル一覧) でワークフロー ファイルを開き、右上にある鉛筆アイコン “Edit” ([編集]) をクリックします。
+必要な変更を行ったら、「コミット」や「プルリクエスト」を作成することでワークフローを更新できます。
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+■ コード スキャンの頻度 (イベント) を構成する
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ワークフロー ファイルの on: セクションで、いつスキャンを実行するかを指定できます。よく使われるイベントは push、pull_request、schedule などです。
+
+on:push
+
+リポジトリの特定ブランチへプッシュがあったときにスキャンを実行します。
+例:
+┌─コード例───────────────────────
+on:
+push:
+branches: [main, protected]
+└────────────────────────────────────
+on:pull_request
+
+プルリクエスト (PR) が作成・更新されたときにスキャンを実行します。
+プライベート フォークからの PR の場合は、リポジトリ設定で “Run workflows from fork pull requests” を有効にしておく必要があります。
+例:
+┌─コード例───────────────────────
+on:
+pull_request:
+branches: [main]
+└───────────────────────────────���────
+schedule (cron)
+
+定期的にスキャンを実行したい場合に利用します。cron の書式に従って設定します (UTC 時間)。
+例: 毎週月曜日の14時20分(UTC)にスキャンを実行
+┌─コード例───────────────────────
+on:
+schedule:
+- cron: '20 14 * * 1'
+└────────────────────────────────────
+以下は push、pull_request、schedule を組み合わせた例です:
+
+YAML
+on:
+  push:
+    branches: [main, protected]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: '20 14 * * 1'
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+■ pull_request イベントで特定ファイル変更のみをスキャンする/スキャンしない
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+paths:
+この配列に指定されたパターンにマッチするファイル変更が含まれている場合にのみスキャンがトリガーされます。
+paths-ignore:
+指定されたファイル変更が含まれる場合はスキャンをトリガーしません。
+MD (Markdown) ファイルやテキストファイルに対する変更ではスキャンを行わない例:
+
+YAML
+on:
+  push:
+    branches: [main, protected]
+  pull_request:
+    branches: [main]
+    paths-ignore:
+      - '**/*.md'
+      - '**/*.txt'
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+■ pull request チェック エラーの重大度 (severity) を定義する
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+重大度が “Error” や “Critical/High” のアラートがあると、プルリクエスト チェックでエラーとなるのが既定です。
+リポジトリの [設定] → [コードのセキュリティと分析] → [コード スキャン] → “Protection rules” で、このしきい値 (エラーを発生させる重大度) を調整できます。
+pull request チェックでエラーになると、マージ時に確認が必要になるため、必要に応じて設定を変更してください。
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+■ 実際の CodeQL 分析ワークフロー例
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+以下は、典型的な codeql-analysis.yml の例です(リポジトリの規模や言語によって差異あります)。スキャンするブランチやスケジュールを調整し、必要に応じて “paths”、 “paths-ignore” などを追加します。
+
+YAML
+name: "CodeQL"
+
+on:
+  push:
+    branches: [main, protected]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: '20 14 * * 1'
+
+jobs:
+  analyze:
+    name: Analyze
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Setup CodeQL
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v2
+        with:
+          languages: ['javascript', 'python']
+          # 必要に応じて 'build-command' や 'queries' などを指定
+
+      # Perform CodeQL Analysis
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v2
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+■ まとめ
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+コード スキャンを柔軟に構成するには、リポジトリの .github/workflows/ 配下にある YAML ファイル (例: codeql-analysis.yml) を編集します。
+イベント (push, pull_request, schedule) および paths / paths-ignore などを駆使することで、不要なスキャンを減らしつつ必要なタイミングでセキュリティ検知を行えます。
+プルリクエスト チェックの重大度しきい値をリポジトリの設定で変更することで、エラー検知をコントロールできます。
+必要に応じて CodeQL の“構成オプション”(スキャン対象言語、カスタムビルド、クエリなど)を調整して、プロジェクトに合ったコード スキャンができるようにしましょう。
