@@ -1,0 +1,94 @@
+GitHub Projects を使用した分析情報の取得および自動化
+このセクションでは、GitHub Projects を使用してプロジェクトの分析情報を取得し、作業を自動化する方法を説明します。
+
+分析情報の取得
+分析情報とその役立て方
+GitHub Projects による分析情報を使用すると、プロジェクトに追加された項目をソースデータとして使用するグラフを表示、作成、カスタマイズできます。グラフを利用することで、プロジェクトの進行状況や傾向を視覚的に把握でき、データに基づいた意思決定が可能になります。
+
+現在のグラフと履歴グラフ
+現在のグラフ
+
+現在のプロジェクト項目を視覚化します。
+例: 各個人に割り当てられた項目数、今後の各反復に割り当てられる issue の数。
+履歴グラフ
+
+組織向けの GitHub Team および GitHub Enterprise Cloud で利用可能。
+時間ベースのグラフで、プロジェクトの傾向と進行状況を表示。
+例: 時間の経過とともに項目の状態を表示するバーンアップグラフ。
+グラフの作成とカスタマイズ
+グラフの作成
+
+ご利用の Project に移動します。
+右上にある折れ線グラフボタンを選択します（マウスホバーで [分析情報] ラベルが表示されます）。
+左側のメニューで [新しいグラフ] を選択します。
+フィルターを使用して表示するデータを制御します。
+フィルターテキストボックスの右側にある [保存] を選択します。
+グラフのカスタマイズ
+
+左側のメニューで構成するグラフを選択します。
+ページの右側にある [構成] を選択します。
+[レイアウト] ドロップダウンを選択してグラフの種類を変更します。
+[X 軸] ドロップダウンを選択して使用するフィールドを選択します。
+必要に応じて [グループ化] を選択し、X 軸の項目をグループ化します。
+プロジェクトの自動化
+組み込みの自動化されたワークフロー
+プロジェクトを自動化する最も簡単な方法は、組み込みのワークフローを使用することです。これにより、新しく作成された issue や pull request が自動的にプロジェクトに追加され、Todo 状態になります。
+
+ワークフローの構成
+Project の右上隅にある 3 つのドットのメニューを選択し、[ワークフロー] を選択します。
+左側の列の [既定のワークフロー] で、[project に追加された項目] を選択します。
+[編集] ボタンを選択してワークフローを変更します。
+[項目をプロジェクトに追加する場合] セクションで、issue と pull request の両方を選択します。
+[値の設定] セクションで、[状態: Todo] を選択します。
+[保存してワークフローを有効にする] を選択します。
+GitHub Actions とワークフロー
+GitHub Actions を使用すると、プロジェクトの自動化を最大限にカスタマイズできます。例えば、issue が作成されたときに自動でラベルを追加し、コメントを残し、プロジェクトボードに移動するワークフローを作成できます。
+
+YAML
+name: Issue Automation
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  automate-issues:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add Label
+        uses: actions/github-script@v4
+        with:
+          script: |
+            github.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.issue.number,
+              labels: ['triage']
+            })
+
+      - name: Add Comment
+        uses: actions/github-script@v4
+        with:
+          script: |
+            github.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.issue.number,
+              body: 'Thank you for opening this issue! We will triage it soon.'
+            })
+GraphQL API
+GitHub で GraphQL を使用すると、API を利用してプロジェクトを容易に自動化できます。GraphQL API を使用することで、プロジェクトの項目を追加、更新、削除するなどの操作が可能です。
+
+GraphQL
+mutation AddItemToProject($projectId: ID!, $contentId: ID!) {
+  addProjectV2ItemById(input: {
+    projectId: $projectId
+    contentId: $contentId
+  }) {
+    item {
+      id
+    }
+  }
+}
+まとめ
+GitHub Projects を使用してプロジェクトの分析情報を取得し、自動化することで、プロジェクト管理が効率化されます。組み込みのワークフロー、GitHub Actions、GraphQL API を活用して、プロジェクトの進行状況を可視化し、作業を自動化しましょう。
