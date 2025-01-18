@@ -1,0 +1,200 @@
+
+■ Markdown とは
+
+HTML の負荷を軽減し、コンテンツ作成を効率的に行うためのマークアップ言語です。
+HTML は正確なレンダリングが可能ですが、コードが大きく扱いにくいことがあります。
+Markdown はプレーン テキストの手軽さと HTML の表現力を両立します。
+■ 本ユニットの目的
+
+Markdown の構造と構文を説明します。
+Markdown に GitHub 独自の拡張機能が追加された GitHub Flavored Markdown (GFM) についても説明します。
+■ 注意点
+
+このユニットは導入を目的としているため、詳細は「まとめ」ユニットの「Markdown 構文の説明」および「GitHub-Flavored Markdown 仕様」を参照してください。
+■ テキストを強調する方法
+斜体: アスタリスク (*) またはアンダースコア (_) で囲む。
+例:
+Code
+This is *italic* text.
+This is also _italic_ text.
+日本語例:
+"This is italic text. これも "斜体" テキストです。"
+太字: 2 つのアスタリスク (**) または 2 つのアンダースコア (__) で囲む。
+例:
+Code
+This is **bold** text.
+This is also __bold__ text.
+日本語例:
+"This is bold text. これも太字のテキストです。"
+斜体と太字の混在:
+例:
+Code
+_This is **italic and bold** text_ 
+__This is bold and *italic* text__
+日本語例:
+"これは斜体と太字のテキスト"
+(斜体部分にシングル アンダースコア、太字に 2 つのアスタリスク)
+"これは太字と "斜体" のテキスト"
+(太字にダブル アンダースコア、斜体にシングル アスタリスク)
+リテラルのアスタリスクを使いたい場合: バックスラッシュ () を使ってエスケープする。
+例:
+Code
+\_This is all \*\*plain\*\* text\_.
+_This is all **plain** text_.
+■ 見出しを宣言する
+HTML の
+などと対応する形で # を用いる。
+の数でレベルを表し、1 から 6 まで指定可能。
+例:
+Code
+###### This is H6 text
+上記は H6 相当の見出し。
+■ 画像およびサイトにリンクする
+画像のリンク: ![]() を使う。
+例:
+Code
+![Link an image.](/learn/azure-devops/shared/media/mara.png)
+サイトや他ページへのリンク: []() を使う。
+例:
+Code
+[Link to Microsoft Training](/training)
+■ リストを作成する
+順序指定済みリスト: 数字とピリオド (1.) を使う。
+
+順序指定されていないリスト: アスタリスク (*) やダッシュ (-) を使う。
+
+ネストした項目はインデントで表す。
+
+順序指定済みリストの例:
+
+Code
+1. First
+1. Second
+1. Third
+実際の表示結果:
+First
+Second
+Third
+順序指定されていないリストの例:
+
+Code
+- First
+  - Nested
+- Second
+- Third
+実際の表示結果:
+First
+Nested
+Second
+Third
+■ テーブルを作成する
+パイプ (|) で列を区切り、次の行でダッシュ (-) を用いてヘッダーを定義する。
+
+例:
+
+Code
+First|Second
+-|-
+1|2
+3|4
+レンダリング結果:
+
+First | Second
+1 | 2
+3 | 4
+
+■ テキストを引用する
+大なり (>) 記号を文頭に付ける。
+例:
+Code
+> This is quoted text.
+レンダリング結果:
+This is quoted text.
+
+■ インライン HTML を使用してギャップを埋める
+Markdown でサポートされていない場合、HTML を直接埋め込める。
+例:
+Code
+Here is a<br />line break
+レンダリング結果:
+Here is a
+line break
+■ コードを操作する
+インラインコード: バックティック (`) で囲む。
+
+例:
+Code
+This is `code`.
+複数行のコードブロック: 3 つのバックティック (```) で囲む (フェンスドコードブロック)。
+
+例:
+Code
+```markdown
+var first = 1;
+var second = 2;
+var sum = first + second;
+Code
+- レンダリング結果 (Markdown シンタックスハイライトとして表示):
+  ```markdown
+  var first = 1;
+  var second = 2;
+  var sum = first + second;
+GFM の場合、最初のバックティック行に言語名を追記すると構文ハイライトを適用できる。
+
+例:
+Code
+```javascript
+var first = 1;
+var second = 2;
+var sum = first + second;
+Code
+- レンダリング結果 (JavaScript 用のシンタックスハイライトとして表示):
+  ```javascript
+  var first = 1;
+  var second = 2;
+  var sum = first + second;
+■ issue および pull request のクロスリンク
+
+GFM では、issue や pull request へのリンクを #ID の形式で簡単に表現できる (#3602 など)。
+長いリンクを貼り付けても GitHub が自動的に短縮してくれる。
+プロジェクトやブランチが異なる場合などにも対応するショートコードがある。
+イシューまたは pull request の URL	https://github.com/desktop/desktop/pull/3602	#3602
+# と、イシューまたは pull request の番号	#3602	#3602
+GH- と、イシューまたは pull request の番号	GH-3602	GH-3602
+Username/Repository#番号	desktop/desktop#3602	desktop/desktop#3602
+詳細は「まとめ」ユニットの記事「自動リンクされた参照と URL」を参照。
+■ 特定のコミットをリンクする
+
+コミット ID (SHA) を直接貼るか、短縮形などを使う。
+コミット URL	https://github.com/desktop/desktop/commit/8304e9c271a5e5ab4fda797304...	8304e9c
+SHA	8304e9c271a5e5ab4fda797304cd7bcca7158c87	8304e9c
+User@SHA	desktop@8304e9c271a5e5ab4fda797304cd7bcca7158c87	desktop@8304e9c
+Username/Repository@SHA	desktop/desktop@8304e9c271a5e5ab4fda797304cd7bcca7158c87	desktop/desktop@8304e9c
+■ ユーザーおよびチームをメンションする
+@ 記号に続けて GitHub のユーザー名やチーム名を入れると、そのユーザーやチームに通知が送信される。
+例:
+Code
+@githubteacher
+上記のように入力すると、そのユーザー (またはチーム) に通知が飛ぶ。
+■ タスク リストを追跡する
+issue や pull request でチェックボックス付きリストをつくると進捗管理できる。
+例:
+Code
+- [x] First task
+- [x] Second task
+- [ ] Third task
+チェックの入ったタスクと入っていないタスクが視覚的に区別される。
+■ スラッシュ コマンド
+
+コメントや説明フィールド内で複雑な Markdown を素早く挿入する機能。
+対応している場所で /code や /table などのコマンドを入力すると、指定したテンプレートや構造が挿入される。
+/code	コードブロックを挿入。言語を選択する。
+/details	折りたたみできる詳細領域を挿入。タイトルとコンテンツを選択できる。
+/saved-replies	保存した返信を挿入。ユーザー アカウントに登録済みの返信から選択。%cursor% を入れておくと挿入後にカーソル配置。
+/table	Markdown テーブルを挿入。列と行の数を指定。
+/tasklist	タスクリストを挿入。issue の説明でのみ機能。
+/template	リポジトリ内のテンプレートを表示。挿入したいテンプレートを選ぶ。issue テンプレートや pull request テンプレートに対応。
+■ まとめ
+上記が Markdown と GitHub Flavored Markdown (GFM) の主要な構文や機能です。
+詳細は「Markdown 構文の説明」および「GitHub-Flavored Markdown 仕様」を参照してください。
+GitHub による拡張機能 (GFM) を使うと、より便利に Markdown を活用できます。
