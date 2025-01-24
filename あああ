@@ -1301,6 +1301,431 @@ What permissions can be assigned to provide granular access to a repository owne
 〇<p>you cannot assign granular level access on a personal account</p>
 〇maintain
 
+問題1:
+Which of the following activities on GitHub can you choose to subscribe to for notifications? (select four)
+〇
+〇
+〇
+〇
+
+問題2:
+In GitHub Actions, what operating systems does GitHub provide runners for? (select three)
+〇
+〇
+〇
+〇
+
+問題3:
+Heather needs to create a brand new, empty repository in her account for a new project. How would she do this?
+〇
+〇
+〇
+〇
+
+問題4:
+Which of the following are NOT controlled via an IdP for GitHub Enterprise Managed Users?
+〇
+〇
+〇
+〇
+
+問題5:
+Which of the following can be defined as a specific and immutable snapshot capturing changes made to one or more files, creating a chronological record in the version history of a repository?
+〇
+〇
+〇
+〇
+
+問題6:
+Which of the following is NOT a supported method of payment for GitHub Sponsors?
+〇
+〇
+〇
+〇
+
+問題7:
+Dani is a new project manager for the organization.  Which organization repository role is recommended to provide Dani?
+〇
+〇
+〇
+〇
+
+問題8:
+What type of content can be saved and reused using the saved replies feature?
+〇
+〇
+〇
+〇
+
+問題9:
+A prerequisite to requiring GitHub two-factor authentication is to:
+〇
+〇
+〇
+〇
+
+問題10:
+You are using Markdown to create a README file in a new repo. You want the following to appear as is in the README file, but it keeps removing the "*" and changing the text to italics. How can you ignore Markdown formatting so the file reads as you want?
+〇
+〇
+〇
+〇
+
+問題11:
+What is the GitHub Marketplace?
+〇
+〇
+〇
+〇
+
+問題12:
+Julie has completed a new feature in her branch in a shared repository. What action should Julie take next, and what does this pull request process allow the team to do when merging changes?
+〇
+〇
+〇
+〇
+
+問題13:
+What are the two deployment options that are offered by GitHub Enterprise?
+〇
+〇
+〇
+〇
+
+問題14:
+Sam has specified that all pull requests in his code repository have two approving reviews before the pull request is merged into the main branch.  Who is eligible as an approver of these requests? (select two)
+〇
+〇
+〇
+〇
+
+問題15:
+Which of the following is the best practice recommended for managing projects?
+〇
+〇
+〇
+〇
+
+問題16:
+What does following someone on the GitHub platform enable?
+〇
+〇
+〇
+〇
+
+問題17:
+GitHub has announced a new feature that is available to all users in a Beta release. However, you can't find the feature while using your personal account. What do you need to do to enable access to this new feature?
+〇
+〇
+〇
+〇
+
+問題18:
+You need to create a new branch for a feature in your local Git repository using the command line. What is the correct sequence of commands you should use to create the branch and sync it to your GitHub repository?
+〇
+〇
+〇
+〇
+
+問題19:
+Which of the following can serve as triggers for a workflow?
+・A) Events within your workflow's repository
+・B) Events outside of GitHub that trigger a "repository_dispatch" event
+・C) Scheduled times
+・D) Manual
+〇
+〇
+〇
+〇
+
+問題20:
+Which of the following best describes the board layout in GitHub projects?
+〇
+〇
+〇
+〇
+
+問題21:
+Who can enable or disable GitHub Discussions on an organization repository?
+〇
+〇
+〇
+〇
+
+問題22:
+Which is true as it relates to GitHub organization owners?
+〇
+〇
+〇
+〇
+
+問題23:
+What is the primary distinction between Git and GitHub?
+〇
+〇
+〇
+〇
+
+問題24:
+Why is it recommended to use automation in GitHub project management?
+〇
+〇
+〇
+〇
+
+問題25:
+Which of the following statements accurately describes the eligibility criteria and subscription options for GitHub Copilot?
+〇
+〇
+〇
+〇
+
+問題26:
+You can receive notifications for activity on GitHub.com in the following locations (select three)
+〇
+〇
+〇
+〇
+
+問題27:
+What is the primary difference between an issue, a discussion, and a pull request in a GitHub repository? (select three)
+〇
+〇
+〇
+〇
+
+問題28:
+How can the use of GitHub topics make a code repository more discoverable?
+〇
+〇
+〇
+〇
+
+問題29:
+When looking for existing GitHub Actions to automate workflows in your repository, where can you typically find and explore the available actions? (select two)
+〇
+〇
+〇
+〇
+
+問題30:
+What primary purpose do labels serve in GitHub repositories?
+〇
+〇
+〇
+〇
+
+問題31:
+What are the different notification options natively available on GitHub? (select three)
+〇
+〇
+〇
+〇
+
+問題32:
+Emmitt is looking to restrict visibility changes to code repositories within his organization.  What is true of restricting the visibility of code repositories?
+〇
+〇
+〇
+〇
+
+問題33:
+Which of the following best describes a potential advantage of using Projects over Projects Classic?
+〇
+〇
+〇
+〇
+
+問題34:
+By default, what happens when you leave your codespace running without interaction and it times out?
+〇
+〇
+〇
+〇
+
+問題35:
+What is the purpose of a "SECURITY.md" file?
+〇
+〇
+〇
+〇
+
+問題36:
+When setting up your project for GitHub Codespaces, what is the purpose of a dev container?
+〇
+〇
+〇
+〇
+
+問題37:
+Your organization is using GitHub Projects, but the admin is having trouble using Insights to create customized charts for your project. What could be the problem?
+〇
+〇
+〇
+〇
+
+問題38:
+In addition to their permissions as members, what additional permissions do Organization Moderators have? (select three)
+〇
+〇
+〇
+〇
+
+問題39:
+You're part of a development team with members using various operating systems. To ensure a consistent coding environment and collaborative experience, which GitHub feature would be most suitable?
+〇
+〇
+〇
+〇
+
+問題40:
+What is the purpose of creating a template repository?
+〇
+〇
+〇
+〇
+
+問題41:
+Which of the following is true about setting base permissions for organization repositories?  (select three)
+〇
+〇
+〇
+〇
+
+問題42:
+What can be found in GitHub repository insights? (select two)
+〇
+〇
+〇
+〇
+
+問題43:
+What type of charts can you create using Insights for projects? (select two)
+〇
+〇
+〇
+〇
+
+問題44:
+Which of the following best describes the GitHub flow to collaborate on projects with other team members?
+〇
+〇
+〇
+〇
+
+問題45:
+You want to share long-form content about your project, like how to use it, how you designed it, or its core principles. How can you create this documentation in GitHub?
+〇
+〇
+〇
+〇
+
+問題46:
+You need to create a new Projects view that mimics a traditional Kanban board so your team can view it during daily standup meetings. What type of layout should you create?
+〇
+〇
+〇
+〇
+
+問題47:
+After enabling GitHub Discussion on your repository, what collaborative options are available to you and your team to promote healthy conversations and a collaborative workspace? (select five)
+〇
+〇
+〇
+〇
+
+問題48:
+What is a Codespaces deep link and why would you use one?
+〇
+〇
+〇
+〇
+
+問題49:
+Which of the following is NOT a GitHub recommendation regarding the use of text messages for GitHub 2FA?
+〇
+〇
+〇
+〇
+
+問題50:
+In GitHub, what is the purpose of pinning an issue in your repository?
+〇
+〇
+〇
+〇
+
+問題51:
+Dani wants to create a new branch for a feature in her GitHub repository directly on GitHub.com. What is the correct method for her to achieve this?
+〇
+〇
+〇
+〇
+
+問題52:
+Julia is a project manager and needs all issues tagged with critical to be automatically added to the project board for better tracking. What GitHub feature can you leverage to quickly achieve this requirement?
+〇
+〇
+〇
+〇
+
+問題53:
+After you have completed developing changes to some policies and completed a peer review, you want to merge the code to the main branch. What action should you take to start this process?
+〇
+〇
+〇
+〇
+
+問題54:
+When should GitHub issue templates be used?
+〇
+〇
+〇
+〇
+
+問題55:
+What is the benefit of using the CODEOWNERS file in a GitHub repository to define individuals or teams who are responsible for code in a repository?
+〇
+〇
+〇
+〇
+
+問題56:
+You want to keep track of GitHub projects you find interesting and discover related content in your news feed. What feature can you use to easily keep track of these repositories?
+〇
+〇
+〇
+〇
+
+問題57:
+What is a key characteristic of InnerSource?
+〇
+〇
+〇
+〇
+
+問題58:
+What is the purpose of the github.dev web-based editor in GitHub Codespaces?
+〇
+〇
+〇
+〇
+
+問題59:
+You have created a draft pull request so team members can check it out and give you feedback. After you are satisfied with the changes and conversation, you try to merge the pull request but are unsuccessful. Why can't you merge the draft pull request?
+ have created a draft pull request so team members can check it out and give you feedback. After you are satisfied with the changes and conversation, you try to merge the pull request but are unsuccessful. Why can't you merge the draft pull request?
+〇
+〇
+〇
+〇
+
+問題60:
+What is the main difference between milestones and labels when it comes to issue tracking?
+〇
+〇
+〇
+〇
+
 
 
 
