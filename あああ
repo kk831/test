@@ -1605,108 +1605,125 @@ What is the purpose of creating a template repository?
 
 問題41:
 Which of the following is true about setting base permissions for organization repositories?  (select three)
-〇
-〇
-〇
-〇
+〇<p>Organization owners can set base permissions for an organization.</p>
+〇<p>Base permissions apply to outside collaborators.</p>
+〇<p>Base permissions apply to all members of an organization when accessing any of the organization's repositories.</p>
+〇<p>By default, members of an organization will have Read permissions to the organization's repositories.</p>
 
 問題42:
 What can be found in GitHub repository insights? (select two)
-〇
-〇
-〇
-〇
+〇recently created branches
+〇contribution activity
+〇traffic overview
+〇list of most downloaded files
 
 問題43:
 What type of charts can you create using Insights for projects? (select two)
-〇
-〇
-〇
-〇
+〇contribution charts
+〇burandown charts
+〇current charts
+〇historical charts
 
 問題44:
 Which of the following best describes the GitHub flow to collaborate on projects with other team members?
-〇
-〇
-〇
-〇
+〇1| 1.Create a pull request
+　2| 2.Make changes to files
+　3| 3.Merge the request
+　4| 4.Review comments
+　5| 5.Delete the branvch
+〇1| 1.Clone the repository
+　2| 2.Make changes to files
+　3| 3.Commit to the main branch
+〇1| 1.Create a branch
+　2| 2.Make to changes to files
+　3| 3.Create a pull request
+　4| 4.Review comments
+　5| 5.Merge the request
+　6| 6.Delete the branch
+〇1| 1.Create a branch
+　2| 2.Create a pull request
+　3| 3.Make changes to files
+　4| 4.Delete the branch
 
 問題45:
 You want to share long-form content about your project, like how to use it, how you designed it, or its core principles. How can you create this documentation in GitHub?
-〇
-〇
-〇
-〇
+〇Create a new file called Wiki in the root of the directory. Add the information you want to share.
+〇<div data-purpose="safely-set-inner-html:rich-text-viewer:html" class="mc-quiz-answer--answer-body--V-o8d rt-scaffolding"><p>Select the 💡 Dependabot option in your repository. Add the information that you want to share.</p></div>
+〇<div data-purpose="safely-set-inner-html:rich-text-viewer:html" class="mc-quiz-answer--answer-body--V-o8d rt-scaffolding"><p>Select the 🔀 Branch tab and create a new branch. Add the information you want to share.</p></div>
+〇<p>Under your repository name, click 📖 Wiki. Add a new page and add the information you want to share.</p>
 
 問題46:
 You need to create a new Projects view that mimics a traditional Kanban board so your team can view it during daily standup meetings. What type of layout should you create?
-〇
-〇
-〇
-〇
+〇board layout
+〇rodmap layout
+〇none of layouts will mimic a Kanban board
+〇table layout
 
 問題47:
 After enabling GitHub Discussion on your repository, what collaborative options are available to you and your team to promote healthy conversations and a collaborative workspace? (select five)
-〇
-〇
-〇
-〇
+〇announcement
+〇stars
+〇polls
+〇Q&A
+〇accomplishments
+〇show and tell
+〇ideas
 
 問題48:
 What is a Codespaces deep link and why would you use one?
-〇
-〇
-〇
-〇
+〇<p>a hyperlink that directly opens a pre-configured Codespace</p>
+〇<p>a connection to GitHub Actions for continuous integration</p>
+〇<p>a URL that leads to the main GitHub repository page</p>
+〇<p>a referral link used to invite collaborators to a repository</p>
 
 問題49:
 Which of the following is NOT a GitHub recommendation regarding the use of text messages for GitHub 2FA?
-〇
-〇
-〇
-〇
+〇<p>Be sure that your device can receive text messages</p>
+〇<p>Download and save your recovery codes to a secure location</p>
+〇<p>GitHub recommends using SMS for two-factor authentication instead of TOTP and security keys</p>
+〇<p>Review the list of countries where GitHub supports authentication via SMS</p>
 
 問題50:
 In GitHub, what is the purpose of pinning an issue in your repository?
-〇
-〇
-〇
-〇
+〇<p>pinning issues helps with highlighting crucial tasks for the project</p>
+〇<p>pinning issues is a way to mark them as completed</p>
+〇<p>pinning issue is required before each issue is closed</p>
+〇<p>pinning issues enhance the repository's search functionality</p>
 
 問題51:
 Dani wants to create a new branch for a feature in her GitHub repository directly on GitHub.com. What is the correct method for her to achieve this?
-〇
-〇
-〇
-〇
+〇<p>Navigate to the "Branch" dropdown on the GitHub repository page, enter a new branch name, and click "Create branch. Alternatively, </p>
+〇<p>Click the "Fork" button on the repository's GitHub page.</p>
+〇<p>Download a ZIP file of the repository and extract it locally to create a new branch.</p>
+〇<p>Use the "git branch" command in the local repository.</p>
 
 問題52:
 Julia is a project manager and needs all issues tagged with critical to be automatically added to the project board for better tracking. What GitHub feature can you leverage to quickly achieve this requirement?
-〇
-〇
-〇
-〇
+〇<p>create a GitHub Action that uses a Runner and the GitHub CLI to add any new issues tagged with <code>critical</code> to the project</p>
+〇<p>use an auto-add workflow with a defined filter of <code>label:critical</code> </p>
+〇<p>use a Projects insight that includes all <code>critical</code> issues in the correct chart</p>
+〇<p>create a new Project Wiki that includes all issues marked at <code>critical</code> so they can be viewed by the team</p>
 
 問題53:
 After you have completed developing changes to some policies and completed a peer review, you want to merge the code to the main branch. What action should you take to start this process?
-〇
-〇
-〇
-〇
+〇fork the repository
+〇open a new issue on the repository
+〇submit a pull request
+〇commit derectly to the main branch
 
 問題54:
 When should GitHub issue templates be used?
-〇
-〇
-〇
-〇
+〇<p>To streamline the creation of consistent issues and enhance collaboration</p>
+〇<p>Only for issues related to code, excluding discussions and general project questions.</p>
+〇<p>Exclusively for private repositories with restricted access</p>
+〇<p>Only for minor bug fixes to avoid cluttering the repository</p>
 
 問題55:
 What is the benefit of using the CODEOWNERS file in a GitHub repository to define individuals or teams who are responsible for code in a repository?
-〇
-〇
-〇
-〇
+〇<p>code owners are automatically requested for review when someone opens a pull request</p>
+〇<p>code owners are the only members that can write to a repository using a pull request</p>
+〇<p>code owners gain access to features available in GitHub Pro</p>
+〇code owners are automatically requested to review and are required to approve draft pull requests
 
 問題56:
 You want to keep track of GitHub projects you find interesting and discover related content in your news feed. What feature can you use to easily keep track of these repositories?
