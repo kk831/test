@@ -1727,39 +1727,39 @@ What is the benefit of using the CODEOWNERS file in a GitHub repository to defin
 
 問題56:
 You want to keep track of GitHub projects you find interesting and discover related content in your news feed. What feature can you use to easily keep track of these repositories?
-〇
-〇
-〇
-〇
+〇<p>star the repositories you are interested in</p>
+〇<p>clone each repository to keep an eye on the changes</p>
+〇<p>create a branch of each repository that you want to watch</p>
+〇<p>fork the repository to automatically get updates to the repository</p>
 
 問題57:
 What is a key characteristic of InnerSource?
-〇
-〇
-〇
-〇
+〇<p>Applying open source practices within an organization's boundaries</p>
+〇<p>Closed development with limited code sharing</p>
+〇<p>Implementing agile development methodologies</p>
+〇<p>Restrictive code review processes for internal projects</p>
 
 問題58:
 What is the purpose of the github.dev web-based editor in GitHub Codespaces?
-〇
-〇
-〇
-〇
+〇<p>to view real-time collaboration metrics and insights on team contributions</p>
+〇<p>to provide a lightweight, browser-based code editing experience directly in the GitHub web interface</p>
+〇<p>to integrate third-party extensions and plugins for enhanced coding capabilities</p>
+〇<p>to manage repository settings and access analytics for GitHub repositories</p>
 
 問題59:
 You have created a draft pull request so team members can check it out and give you feedback. After you are satisfied with the changes and conversation, you try to merge the pull request but are unsuccessful. Why can't you merge the draft pull request?
  have created a draft pull request so team members can check it out and give you feedback. After you are satisfied with the changes and conversation, you try to merge the pull request but are unsuccessful. Why can't you merge the draft pull request?
-〇
-〇
-〇
-〇
+〇<p>Due to an ongoing discussion in the pull request, GitHub does not allow merging until discussions are closed.</p>
+〇<p>Merging is blocked in draft pull requests. Change the status to “Ready for review.”</p>
+〇<p>The branch associated with the pull request has new commits that must be incorporated before merging.</p>
+〇<p>Draft pull requests are read-only; merging actions can only be performed on regular pull requests.</p>
 
 問題60:
 What is the main difference between milestones and labels when it comes to issue tracking?
-〇
-〇
-〇
-〇
+〇<p>milestones track individual code changes, while labels organize repositories</p>
+〇<p>milestones set due dates and can track the completion percentage of the issue, while labels categorize issues</p>
+〇<p>milestones control user access, while labels prioritize issues based on importance</p>
+〇<p>milestones are used for version control, while labels are for categorization</p>
 
 
 
